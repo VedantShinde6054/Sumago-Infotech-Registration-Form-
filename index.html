@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="Stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div class="form-container">
+      <form method="post">
+        <div class="input-name">
+          <h3>Personal details :-</h3>
+          <label><strong> Name :-</strong> </label>
+          <input type="text" placeholder="Full Name" class="name" required />
+        </div>
+        <div class="input-name">
+          <label> <strong>Email ID :-</strong> </label>
+          <input type="email" placeholder="Email" class="email" required />
+        </div>
+
+        <div class="input-name">
+          <label><strong>Mobile :-</strong> </label>
+          <input
+            type="tel"
+            placeholder="Phone No."
+            name="Phone"
+            pattern="[0-9]{10}"
+            class="phone"
+            required
+          />
+        </div>
+        <div class="input-name">
+          <label><strong>DOB :-</strong> </label>
+          <input
+            type="date"
+            placeholder="Date of birth"
+            name="bday"
+            class="birthdate"
+            required
+          />
+        </div>
+
+        <div class="input-name">
+          <label><strong>Gender :-</strong> </label>
+          <input type="radio" name="g1" class="radio-button" required />
+          <label style="margin-right: 30px">Male</label>
+          <input type="radio" name="g1" class="radio-button" required />
+          <label>Female</label>
+        </div>
+
+        <div class="input-name">
+          <label><strong>City :-</strong> </label>
+          <select class="city" required>
+            <option>Select your City</option>
+            <option>Ahmednagar</option>
+            <option>Pune</option>
+            <option>Nashik</option>
+            <option>Kopargaon</option>
+          </select>
+        </div>
+
+        <div class="input-name">
+          <label class="add"><strong>Address</strong></label>
+          <textarea placeholder="Enter your address" name="address"> </textarea>
+        </div>
+
+        <h3>Education details :-</h3>
+        <div class="input-name">
+          <label class="year1"><strong>Current Year :-</strong></label>
+          <select class="year" required>
+            <option>Select your pursuing year</option>
+            <option>First year</option>
+            <option>Second year</option>
+            <option>Third year</option>
+            <option>B.Tech</option>
+          </select>
+        </div>
+
+        <div class="input-name">
+          <label><strong>PRN number :-</strong></label>
+          <input type="varchar" placeholder="PRN No." class="prn" required />
+        </div>
+        <div class="input-name">
+          <label><strong>Interest :-</strong></label>
+          <select class="interest" required>
+            <option>select interest</option>
+            <option>Front End</option>
+            <option>Back End</option>
+            <option>Data Science</option>
+            <option>AI-ML</option>
+          </select>
+        </div>
+        <div class="input-name">
+          <label
+            ><strong
+              >Expected date of completion of B.tech course :-</strong
+            ></label
+          ><input type="date" name="date" class="cdate" required />
+        </div>
+
+        <div class="input-name">
+          <input type="checkbox" class="chekcbox" required />
+          <label style="font-size: 14px"
+            >I hereby declare that the above informaton provided is true and
+            correct</label
+          >
+        </div>
+
+        <div class="input-name">
+          <button type="submit" value="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
